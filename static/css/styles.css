@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #3e8ed0;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    scrollbar-width: thin;
+    scrollbar-color: #3e8ed0 #e0e0e0;
+    direction: rtl; /* For scrollbar on the left */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-body::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    background-color: #3e8ed0;
+    border-radius: 10px;
+}
+
+.chat-bubble {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    animation: fadeIn 0.3s;
+    text-align: left;
+}
+
+.user-message {
+    background: #3e8ed0;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background: #f1f1f1;
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    background: #3e8ed0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

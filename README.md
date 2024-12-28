@@ -34,7 +34,7 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Babaiii07/Finetuning_GEMINI_on_custom_ecommerce_data
+   git clone https://github.com/Babaiii07/Finetuning_GEMINI_on_custom_ecommerce_data.git
    cd Finetuning_GEMINI_on_custom_ecommerce_data
 
 Install Dependencies:
@@ -96,13 +96,4 @@ What payment methods do you accept?	We accept credit cards, PayPal, and bank tra
 🤝 Contributing
 Contributions are welcome! If you'd like to add features or improve the project:
 
-Fork the repository.
-Create a new branch: git checkout -b feature/YourFeatureName.
-Commit your changes: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature/YourFeatureName.
-Open a pull request.
-🙏 Acknowledgements
-FAISS
-Google Generative AI
-Flask
-LangChain
+
